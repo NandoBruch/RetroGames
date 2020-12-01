@@ -1,0 +1,79 @@
+h2 {
+    font-weight: normal;
+    font-size: 96px;
+}
+
+body {
+    background-color: black;
+}
+
+body > div > section{
+    height: 3854px;
+}
+
+.game{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    padding-top: 10em;
+}
+
+.game > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+    justify-content: space-evenly;
+    height: 600px;
+    width: 30%;
+}
+
+.game > img {
+    height: 600px;
+    width: 583px;
+}
+
+.game h3 {
+    font-size: 48px;
+}
+
+.game p {
+    font-size: 32px;
+}
+
+.game button{
+    background-color: #00B9F1;
+    height: 80px;
+    width: 80%;
+    color: white;
+    border: none;
+    font-size: 24px;
+    box-shadow: 10px 10px 0 0 rgb(18, 93, 116);
+}
+
+.titulo-jogos{
+    height: 400px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.titulo-jogos p {
+    font-size: 34px;
+}
+
+.background {
+    background-image: url(../assets/bg/jogos-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+footer{
+    color: white;
+}
