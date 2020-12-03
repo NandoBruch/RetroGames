@@ -11,6 +11,15 @@ body > div > section{
     height: 3854px;
 }
 
+.gaming{
+    display: none;
+    height: 500px;
+}
+
+.back{
+    text-align: right;
+}
+
 .game{
     display: flex;
     flex-direction: row;
@@ -52,6 +61,7 @@ body > div > section{
     border: none;
     font-size: 24px;
     box-shadow: 10px 10px 0 0 rgb(18, 93, 116);
+    outline: none;
 }
 
 .titulo-jogos{

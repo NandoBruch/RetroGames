@@ -53,39 +53,39 @@
     </section>
 
     <section class="cards">
-        <div>
+        <div id="Mario">
             <header class="mario-bg">
                 <h3>
                     Mario Bros 
                 </h3>
             </header>
             <div>
-                 <p> Dale Dale Dale Dale Dale Dale Dale Dale Dale</p>
-                 <button></button>
+                 <p>Jogo eletrônico de plataforma desenvolvido pela Nintendo Research & Development</p>
+                 <button onclick="historiaMario()"></button>
             </div>
         </div>
 
-        <div>
-            <header class="mario-bg">
+        <div id="Celeste">
+            <header class="celeste-bg">
                 <h3>
-                    Mario Bros 
+                    Celeste
                 </h3>
             </header>
             <div>
-                 <p> Dale Dale Dale Dale Dale Dale Dale Dale Dale</p>
-                 <button></button>
+                 <p>Jogo de plataforma desenvolvido pelos canadenses Matt Thorson e Noel Berry</p>
+                 <button onclick="historiaCeleste()"></button>
             </div>
         </div>
 
-        <div>
-            <header class="mario-bg">
+        <div id="MeatBoy">
+            <header class="meatBoy-bg">
                 <h3>
-                    Mario Bros 
+                    Super Meat Boy
                 </h3>
             </header>
             <div>
-                 <p> Dale Dale Dale Dale Dale Dale Dale Dale Dale</p>
-                 <button></button>
+                 <p>Jogo independente projetado por Edmund McMillen e Tommy Refenes</p>
+                 <button onclick="historiaMeat()"></button>
             </div>
         </div>
     </section>
@@ -102,6 +102,19 @@
         </div>
         <p>Copyright © 2020 DCL Sistemas - Todos os direitos reservados</p>
     </footer>
-    
+    <script>
+        function historiaMario(){
+            document.querySelector("#Mario").setAttribute("style", "height: 1200px;")
+            document.querySelector(".mario-bg").setAttribute("style", "height: 35%;")
+            // document.querySelector("#mario").style = "display: flex; align-itens: center; justify-content: center; margin-bottom: 200px;"
+            // $("#mario").load('./games/Mario/index.html')
+        }
+        function historiaCeleste(){
+            
+        }
+        function historiaMeat(){
+            
+        }
+    </script>    
 </body>
 </html>
