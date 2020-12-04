@@ -55,9 +55,9 @@
         </section>
 
         <section>
-            <div>
-            <div class="gaming" id="mario"></div>
-            <button class="back">Fechar</button>
+            <div class="playing mario">
+                <div class="gaming" id="mario"></div>
+                <button onclick="closeMario()" class="back">Fecha Jogo</button>
             </div>
             
             <div class="game">
@@ -68,8 +68,9 @@
                     <button onclick="playMario();">Jogar Agora</button>
                 </div>
             </div>
-            <div>
+            <div class="playing celeste">
             <div class="gaming" id="celeste"></div>
+            <button onclick="closeCeleste()" class="back">Fechar Jogo</button>
             </div>
             <div class="game">
                 <div>
@@ -79,8 +80,9 @@
                 </div>
                 <img src="assets/images/game-celeste.png">
             </div>
-            <div>
+            <div class="playing meatboy">
             <div class="gaming" id="meatBoy"></div>
+            <button onclick="closeMeat()" class="back">Fecha Jogo</button>
             </div>
             <div class="game">
                 <img src="assets/images/game-meatBoy.png">
@@ -109,17 +111,35 @@
             function playMario(){
                 document.querySelector("section:last-child > div:nth-child(2)").setAttribute("style", "display: none;")
                 document.querySelector("#mario").style = "display: flex; align-itens: center; justify-content: center; margin-bottom: 200px;"
+                document.querySelector(".mario .back").style = "display: block"
                 $("#mario").load('./games/Mario/index.html')
+            }
+
+            function closeMario(){
+                document.querySelector(".mario").style = "display: none";
+                document.querySelector("section:last-child > div:nth-child(2)").setAttribute("style", "display: flex;")
             }
             function playMeatBoy(){
                 document.querySelector("section:last-child > div:nth-child(6)").setAttribute("style", "display: none;")
                 document.querySelector("#meatBoy").style = "display: flex; align-itens: center; justify-content: center; margin-bottom: 200px;"
+                document.querySelector(".meatboy .back").style = "display: block"
                 $("#meatBoy").load('./games/MeatBoy/index.html')
+            }
+
+            function closeMeat(){
+                document.querySelector(".meatboy").style = "display: none";
+                document.querySelector("section:last-child > div:nth-child(6)").setAttribute("style", "display: flex;")
             }
             function playCeleste(){
                 document.querySelector("section:last-child > div:nth-child(4)").setAttribute("style", "display: none;")
                 document.querySelector("#celeste").style = "display: flex; align-itens: center; justify-content: center; margin-bottom: 200px;"
+                document.querySelector(".celeste .back").style = "display: block"
                 $("#celeste").load('./games/celeste/index.html')
+            }
+
+            function closeCeleste(){
+                document.querySelector(".celeste").style = "display: none";
+                document.querySelector("section:last-child > div:nth-child(4)").setAttribute("style", "display: flex;")
             }
         </script>
 </body>

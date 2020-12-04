@@ -15,12 +15,12 @@ h3{
     font-size: 24px;
     font-weight: normal;
     text-align: left;
-    padding: 350px 0 0 20px;
+    padding: 300px 0 0 20px;
 }
 
 button{
     border: none;
-    background: url(/assets/icons/arrow-down.png);
+    background: url("../assets/icons/arrow-down.png");
     height: 25px;
     width: 45px;
     background-size: contain;
@@ -28,6 +28,7 @@ button{
     outline: none;
     cursor: pointer;
 }
+
 
 .cards{
     display: flex;
@@ -38,20 +39,30 @@ button{
 
 
 .cards > div{
-    height: 600px;
-    width: 60%;
+    height: 100%;
+    width: 60vw;
     background-color: white;
     box-shadow: 0 15px 15px 5px black;
     margin-bottom: 100px;
 }
 
 .cards > div > div{
-    height: 30%;
+    height: 15vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     color: #125D74;
     font-size: 26px;
+    padding: 20px 0;
+}
+
+.cards > div > div:last-child{
+    display: none;
+    font-size: 20px;
+    height: 40%;
+    padding: 30px 0;
+    align-items: flex-end;
+    text-align: justify;
 }
 
 .cards > div > div p{
@@ -59,12 +70,23 @@ button{
     line-height: 35px;
 }
 
+
+.fechar{
+    background: url("../assets/icons/arrow-up.png");
+    height: 25px;
+    width: 45px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    outline: none;
+    cursor: pointer;
+}
+
 .mario-bg{
     background-image: url("../assets/bg/mario-bg.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 70%;
+    height: 40vh;
 } 
 
 .celeste-bg{
@@ -72,7 +94,7 @@ button{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 70%;
+    height: 40vh;
 }
 
 .meatBoy-bg{
@@ -80,7 +102,7 @@ button{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 70%;
+    height: 40vh;
 }
 
 
@@ -97,6 +119,8 @@ button{
 .titulo-historia p {
     font-size: 34px;
 }
+
+
 
 footer{
     color: white;

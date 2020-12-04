@@ -61,7 +61,21 @@
             </header>
             <div>
                  <p>Jogo eletrônico de plataforma desenvolvido pela Nintendo Research & Development</p>
-                 <button onclick="historiaMario()"></button>
+                 <button id="mario-abrir" onclick="historiaMario()"></button>
+            </div>
+            <div>
+                <p>
+                    É o sucessor do jogo de arcade de 1983 Mario Bros.
+                    Os jogadores controlam Mario, ou seu irmão Luigi no 
+                    modo multijogador, enquanto viajam pelo Reino dos Cogumelos
+                    para resgatar a Princesa Peach de Bowser. Eles devem percorrer
+                    os mundos em uma visão em rolagem lateral, evitando perigos como
+                    inimigos e buracos com a ajuda de power-ups como o Super Cogumelo,
+                    Fire Flower e Starman.<br>Super Mario Bros. é frequentemente citado
+                    como um dos melhores jogos já feitos, com elogios direcionados principalmente
+                    a seus controles precisos. 
+                </p>
+                <button class="fechar" onclick="closeMario()"></button>
             </div>
         </div>
 
@@ -75,6 +89,22 @@
                  <p>Jogo de plataforma desenvolvido pelos canadenses Matt Thorson e Noel Berry</p>
                  <button onclick="historiaCeleste()"></button>
             </div>
+            <div>
+                <p>
+                    Repleto de desafios e nós na garganta,
+                    Celeste joga uma luz forte e definitiva
+                    em um assunto delicado (e muito evitado
+                    pela maioria das pessoas até pouco tempo atrás),
+                    de um jeito tão impactante que nada vai voltar a
+                    ser o que era antes. Nem você.  Pra isso, é claro,
+                    é preciso coragem. O jogo pegou pra si a missão de
+                    falar de um jeito ponderado e realista sobre ansiedade,
+                    depressão e como lidar com momentos de crise. De peito aberto,
+                    sem açúcar por cima, sem tentar fazer parecer bonito. Aquele
+                    primeiro passo que é sempre o mais difícil.
+                </p>
+                <button class="fechar" onclick="closeCeleste()"></button>
+            </div>
         </div>
 
         <div id="MeatBoy">
@@ -86,6 +116,23 @@
             <div>
                  <p>Jogo independente projetado por Edmund McMillen e Tommy Refenes</p>
                  <button onclick="historiaMeat()"></button>
+            </div>
+            <div>
+                <p>
+                    O desenvolvimento do jogo começou em janeiro de 2009.
+                    McMillen trabalhou no projeto dos níveis e na parte artística,
+                    enquanto Refenes trabalhou na codificação de todo o jogo;
+                    ele foi testado primeiramente pela dupla e por suas famílias.
+                    Inicialmente previsto para ser lançado no início de 2010 para PC
+                    e no serviço WiiWare, Super Meat Boy foi adiado porque o projeto
+                    foi alterado para incluir mais níveis e excluir os modos multijogadores.
+                    A versão para WiiWare foi cancelada por causa de limitações técnicas do
+                    serviço. A música do jogo foi composta por Danny Baranowsky,
+                    que também havia feito a música de Meat Boy. Um álbum contendo a trilha
+                    sonora foi lançado comercial, e algumas faixas foram lançadas como DLC
+                    para Rock Band 3. 
+                </p>
+                <button class="fechar" onclick="closeMeat()"></button>
             </div>
         </div>
     </section>
@@ -104,16 +151,31 @@
     </footer>
     <script>
         function historiaMario(){
-            document.querySelector("#Mario").setAttribute("style", "height: 1200px;")
-            document.querySelector(".mario-bg").setAttribute("style", "height: 35%;")
-            // document.querySelector("#mario").style = "display: flex; align-itens: center; justify-content: center; margin-bottom: 200px;"
-            // $("#mario").load('./games/Mario/index.html')
+            document.querySelector("#Mario > div:last-child").setAttribute("style", " display: flex;")
+            document.querySelector("#Mario button").setAttribute("style", " visibility: hidden;")
         }
+        function closeMario(){
+            document.querySelector("#Mario > div:last-child").setAttribute("style", " display: none;")
+            document.querySelector("#Mario button").setAttribute("style", " visibility: visible;")
+        }
+
         function historiaCeleste(){
-            
+            document.querySelector("#Celeste > div:last-child").setAttribute("style", " display: flex;")
+            document.querySelector("#Celeste button").setAttribute("style", " visibility: hidden;")
         }
+        function closeCeleste(){
+            document.querySelector("#Celeste > div:last-child").setAttribute("style", " display: none;")
+            document.querySelector("#Celeste button").setAttribute("style", " visibility: visible;")
+        }
+
         function historiaMeat(){
-            
+            document.querySelector("#MeatBoy > div:last-child").setAttribute("style", " display: flex;")
+            document.querySelector("#MeatBoy button").setAttribute("style", " visibility: hidden;")
+        }
+        
+        function closeMeat(){
+            document.querySelector("#MeatBoy > div:last-child").setAttribute("style", " display: none;")
+            document.querySelector("#MeatBoy button").setAttribute("style", " visibility: visible;")
         }
     </script>    
 </body>

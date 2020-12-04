@@ -6,6 +6,7 @@
     <link href="css/geral.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>Retro Games</title>
 </head>
@@ -48,11 +49,14 @@
             </a>
         </header>
 
+       
         <section>
+            <div class="gaming" id="mario"></div>
+            <button onclick="closeMario()" class="fechar">Fechar jogo</button>
             <p>
                 Jogue os jogos da<br> sua infância e<br> aprenda um pouco<br> sobre eles!
             </p>
-            <button value="Jogar">Jogar agora</button>
+            <button onclick="playMario()" value="Jogar">Jogar agora</button>
         </section>
     </div>
     <footer>
@@ -67,6 +71,22 @@
         </div>
         <p>Copyright © 2020 DCL Sistemas - Todos os direitos reservados</p>
     </footer>
+
+    <script>
+        function playMario() {
+            elements = document.querySelectorAll("section p, section button:last-child");
+            elements.forEach((i) => i.style = "display: none");
+            document.querySelector(".gaming").style = "display: flex";
+            document.querySelector(".fechar").style = "display: block";
+            $("#mario").load('./games/Mario/index.html');
+        }
+
+        function closeMario(){
+            document.querySelectorAll(".gaming, .fechar").forEach((i) => i.style = "display: none;");
+            document.querySelectorAll("section p, section button:last-child").forEach((i) => i.style = "display: block")
+            $("#mario").empty();
+        }
+    </script>
     
 </body>
 </html>

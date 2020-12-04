@@ -11,14 +11,31 @@ body > div > section{
     height: 3854px;
 }
 
+.playing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.back {
+    display: none;
+    height: 80px;
+    width: 40%;
+    color: white;
+    border: none;
+    font-size: 24px;
+    background-color: #B4181C ;
+    box-shadow: 10px 10px 0 0 #6A050B;
+    outline: none;
+}
+
 .gaming{
     display: none;
     height: 500px;
+    width: 80vw;
 }
 
-.back{
-    text-align: right;
-}
 
 .game{
     display: flex;
