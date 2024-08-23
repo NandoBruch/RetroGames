@@ -1,182 +1,178 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Retro Games | História</title>
-    <link href="css/geral.css" rel="stylesheet">
-    <link href="css/historia.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link href="css/geral.css" rel="stylesheet" />
+    <link href="css/historia.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <a href="index.html">
-            <picture>
-                <source srcset="assets/images/logo.png">
-                <img src="assets/images/logo.png" alt="logotipo">
-            </picture>
-        </a>
-        <ul>
-            <li>
-                <a href="index.html">
-                    Home
-                </a>
-            </li>
-            <li>
-                <a href="jogos.html">
-                    Jogos
-                </a>
-            </li>
-            <li>
-                <a href="historia.html">
-                    História
-                </a>
-            </li>
-            <li>
-                <a href="sugestao.html">
-                    Sugestões
-                </a>
-            </li> 
-        </ul>
-        <a>
-            <picture>
-                <source srcset="assets/images/user-icon.png">
-                <img src="assets/images/user-icon.png" alt="ícone de usuário">
-            </picture>
-        </a>
+      <a href="index.html">
+        <picture>
+          <source srcset="assets/images/logo.png" />
+          <img src="assets/images/logo.png" alt="logotipo" />
+        </picture>
+      </a>
+      <ul>
+        <li>
+          <a href="index.html"> Home </a>
+        </li>
+        <li>
+          <a href="jogos.html"> Jogos </a>
+        </li>
+        <li>
+          <a href="historia.html"> História </a>
+        </li>
+        <li>
+          <a href="sugestao.html"> Sugestões </a>
+        </li>
+      </ul>
+      <a>
+        <picture>
+          <source srcset="assets/images/user-icon.png" />
+          <img src="assets/images/user-icon.png" alt="ícone de usuário" />
+        </picture>
+      </a>
     </header>
 
     <section class="titulo-historia">
-        <h2>História</h2>
-        <p>Aprenda um pouco sobre os seus jogos favoritos</p>
+      <h2>História</h2>
+      <p>Aprenda um pouco sobre os seus jogos favoritos</p>
     </section>
 
     <section class="cards">
-        <div id="Mario">
-            <header class="mario-bg">
-                <h3>
-                    Mario Bros 
-                </h3>
-            </header>
-            <div>
-                 <p>Jogo eletrônico de plataforma desenvolvido pela Nintendo Research & Development</p>
-                 <button id="mario-abrir" onclick="historiaMario()"></button>
-            </div>
-            <div>
-                <p>
-                    É o sucessor do jogo de arcade de 1983 Mario Bros.
-                    Os jogadores controlam Mario, ou seu irmão Luigi no 
-                    modo multijogador, enquanto viajam pelo Reino dos Cogumelos
-                    para resgatar a Princesa Peach de Bowser. Eles devem percorrer
-                    os mundos em uma visão em rolagem lateral, evitando perigos como
-                    inimigos e buracos com a ajuda de power-ups como o Super Cogumelo,
-                    Fire Flower e Starman.<br>Super Mario Bros. é frequentemente citado
-                    como um dos melhores jogos já feitos, com elogios direcionados principalmente
-                    a seus controles precisos. 
-                </p>
-                <button class="fechar" onclick="closeMario()"></button>
-            </div>
+      <div id="Mario">
+        <header class="mario-bg">
+          <h3>Mario Bros</h3>
+        </header>
+        <div>
+          <p>
+            Jogo eletrônico de plataforma desenvolvido pela Nintendo Research &
+            Development
+            <br />
+            <br />
+            É o sucessor do jogo de arcade de 1983 Mario Bros. Os jogadores
+            controlam Mario, ou seu irmão Luigi no modo multijogador, enquanto
+            viajam pelo Reino dos Cogumelos para resgatar a Princesa Peach de
+            Bowser. Eles devem percorrer os mundos em uma visão em rolagem
+            lateral, evitando perigos como inimigos e buracos com a ajuda de
+            power-ups como o Super Cogumelo, Fire Flower e Starman.<br />Super
+            Mario Bros. é frequentemente citado como um dos melhores jogos já
+            feitos, com elogios direcionados principalmente a seus controles
+            precisos.
+          </p>
+          <button id="button-Mario" onclick="toogleHistory('Mario')"></button>
         </div>
+      </div>
 
-        <div id="Celeste">
-            <header class="celeste-bg">
-                <h3>
-                    Celeste
-                </h3>
-            </header>
-            <div>
-                 <p>Jogo de plataforma desenvolvido pelos canadenses Matt Thorson e Noel Berry</p>
-                 <button onclick="historiaCeleste()"></button>
-            </div>
-            <div>
-                <p>
-                    Repleto de desafios e nós na garganta,
-                    Celeste joga uma luz forte e definitiva
-                    em um assunto delicado (e muito evitado
-                    pela maioria das pessoas até pouco tempo atrás),
-                    de um jeito tão impactante que nada vai voltar a
-                    ser o que era antes. Nem você.  Pra isso, é claro,
-                    é preciso coragem. O jogo pegou pra si a missão de
-                    falar de um jeito ponderado e realista sobre ansiedade,
-                    depressão e como lidar com momentos de crise. De peito aberto,
-                    sem açúcar por cima, sem tentar fazer parecer bonito. Aquele
-                    primeiro passo que é sempre o mais difícil.
-                </p>
-                <button class="fechar" onclick="closeCeleste()"></button>
-            </div>
+      <div id="Celeste">
+        <header class="celeste-bg">
+          <h3>Celeste</h3>
+        </header>
+        <div>
+          <p>
+            Jogo de plataforma desenvolvido pelos canadenses Matt Thorson e Noel
+            Berry
+            <br />
+            <br />
+            Repleto de desafios e nós na garganta, Celeste joga uma luz forte e
+            definitiva em um assunto delicado (e muito evitado pela maioria das
+            pessoas até pouco tempo atrás), de um jeito tão impactante que nada
+            vai voltar a ser o que era antes. Nem você. Pra isso, é claro, é
+            preciso coragem. O jogo pegou pra si a missão de falar de um jeito
+            ponderado e realista sobre ansiedade, depressão e como lidar com
+            momentos de crise. De peito aberto, sem açúcar por cima, sem tentar
+            fazer parecer bonito. Aquele primeiro passo que é sempre o mais
+            difícil.
+          </p>
+          <button
+            id="button-Celeste"
+            onclick="toogleHistory('Celeste')"
+          ></button>
         </div>
+      </div>
 
-        <div id="MeatBoy">
-            <header class="meatBoy-bg">
-                <h3>
-                    Super Meat Boy
-                </h3>
-            </header>
-            <div>
-                 <p>Jogo independente projetado por Edmund McMillen e Tommy Refenes</p>
-                 <button onclick="historiaMeat()"></button>
-            </div>
-            <div>
-                <p>
-                    O desenvolvimento do jogo começou em janeiro de 2009.
-                    McMillen trabalhou no projeto dos níveis e na parte artística,
-                    enquanto Refenes trabalhou na codificação de todo o jogo;
-                    ele foi testado primeiramente pela dupla e por suas famílias.
-                    Inicialmente previsto para ser lançado no início de 2010 para PC
-                    e no serviço WiiWare, Super Meat Boy foi adiado porque o projeto
-                    foi alterado para incluir mais níveis e excluir os modos multijogadores.
-                    A versão para WiiWare foi cancelada por causa de limitações técnicas do
-                    serviço. A música do jogo foi composta por Danny Baranowsky,
-                    que também havia feito a música de Meat Boy. Um álbum contendo a trilha
-                    sonora foi lançado comercial, e algumas faixas foram lançadas como DLC
-                    para Rock Band 3. 
-                </p>
-                <button class="fechar" onclick="closeMeat()"></button>
-            </div>
+      <div id="MeatBoy">
+        <header class="meatBoy-bg">
+          <h3>Super Meat Boy</h3>
+        </header>
+        <div>
+          <p>
+            Jogo independente projetado por Edmund McMillen e Tommy Refenes
+            <br />
+            <br />
+            O desenvolvimento do jogo começou em janeiro de 2009. McMillen
+            trabalhou no projeto dos níveis e na parte artística, enquanto
+            Refenes trabalhou na codificação de todo o jogo; ele foi testado
+            primeiramente pela dupla e por suas famílias. Inicialmente previsto
+            para ser lançado no início de 2010 para PC e no serviço WiiWare,
+            Super Meat Boy foi adiado porque o projeto foi alterado para incluir
+            mais níveis e excluir os modos multijogadores. A versão para WiiWare
+            foi cancelada por causa de limitações técnicas do serviço. A música
+            do jogo foi composta por Danny Baranowsky, que também havia feito a
+            música de Meat Boy. Um álbum contendo a trilha sonora foi lançado
+            comercial, e algumas faixas foram lançadas como DLC para Rock Band
+            3.
+          </p>
+          <button
+            id="button-MeatBoy"
+            onclick="toogleHistory('MeatBoy')"
+          ></button>
         </div>
+      </div>
     </section>
 
     <footer>
-        <p>
-            Redes Sociais
-        </p>
-        <div>
-            <a href="#"><img src="assets/icons/twitterr-icon.png" alt="Ícone do twitter"></a>
-            <a href="#"><img src="assets/icons/fb-icon.png" alt="Ícone do facebook"></a>
-            <a href="#"><img src="assets/icons/instagram-icon.png" alt="Ícone do instagram"></a>
-            <a href="#"><img src="assets/icons/youtube-icon.png" alt="Ícone do youtube"></a>
-        </div>
-        <p>Copyright © 2020 DCL Sistemas - Todos os direitos reservados</p>
+      <p>Redes Sociais</p>
+      <div>
+        <a href="#"
+          ><img src="assets/icons/twitterr-icon.png" alt="Ícone do twitter"
+        /></a>
+        <a href="#"
+          ><img src="assets/icons/fb-icon.png" alt="Ícone do facebook"
+        /></a>
+        <a href="#"
+          ><img src="assets/icons/instagram-icon.png" alt="Ícone do instagram"
+        /></a>
+        <a href="#"
+          ><img src="assets/icons/youtube-icon.png" alt="Ícone do youtube"
+        /></a>
+      </div>
+      <p>Copyright © 2020 DCL Sistemas - Todos os direitos reservados</p>
     </footer>
     <script>
-        function historiaMario(){
-            document.querySelector("#Mario > div:last-child").setAttribute("style", " display: flex;")
-            document.querySelector("#Mario button").setAttribute("style", " visibility: hidden;")
-        }
-        function closeMario(){
-            document.querySelector("#Mario > div:last-child").setAttribute("style", " display: none;")
-            document.querySelector("#Mario button").setAttribute("style", " visibility: visible;")
-        }
+      const historys = {
+        Mario: true,
+        Celeste: true,
+        MeatBoy: true,
+      };
+      function toogleHistory(id) {
+        document
+          .querySelector(`#${id} > div`)
+          .setAttribute(
+            "style",
+            ` max-height: ${historys[id] ? "900px" : "150px"};`
+          );
 
-        function historiaCeleste(){
-            document.querySelector("#Celeste > div:last-child").setAttribute("style", " display: flex;")
-            document.querySelector("#Celeste button").setAttribute("style", " visibility: hidden;")
-        }
-        function closeCeleste(){
-            document.querySelector("#Celeste > div:last-child").setAttribute("style", " display: none;")
-            document.querySelector("#Celeste button").setAttribute("style", " visibility: visible;")
-        }
-
-        function historiaMeat(){
-            document.querySelector("#MeatBoy > div:last-child").setAttribute("style", " display: flex;")
-            document.querySelector("#MeatBoy button").setAttribute("style", " visibility: hidden;")
-        }
-        
-        function closeMeat(){
-            document.querySelector("#MeatBoy > div:last-child").setAttribute("style", " display: none;")
-            document.querySelector("#MeatBoy button").setAttribute("style", " visibility: visible;")
-        }
-    </script>    
-</body>
+        document
+          .querySelector(`#button-${id}`)
+          .setAttribute(
+            "style",
+            `background: url(${
+              historys[id]
+                ? "../assets/icons/arrow-up.png"
+                : "../assets/icons/arrow-down.png"
+            });`
+          );
+        historys[id] = !historys[id];
+      }
+    </script>
+  </body>
 </html>
